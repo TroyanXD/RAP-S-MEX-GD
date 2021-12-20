@@ -1,0 +1,205 @@
+/* ESTILOS DE RESETEO */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--colorsecundario);
+}
+
+/* VARIABLES DE COLOR */
+
+:root {
+    --colorprimario: #000000;
+    --colorsecundario: #FFFFFF;
+    --red: #FF0000;
+    --grey: #878787;
+}
+
+/* ESTILOS GENERALES */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: var(--colorprimario);
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 30px .5px var(--grey);
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: .5rem 0;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.fa-home {
+    color: var(--colorsecundario);
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+
+/* CUERPO */
+.main-section {
+    width: 100%;
+}
+
+.main-user-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.user-box {
+    width: 90%;
+    margin: auto;
+    height: 60%;
+    background-color: var(--colorsecundario);
+    border-radius: 10px;
+    font-size: 15rem;
+}
+
+.img-user {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.name-user {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+.title {
+    margin-top: 10rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.Footer-Father{
+    width: 100%;
+    background-color: var(--colorprimario);
+    display: block;
+    position: absolute;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.Footer-Father .Container-One{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.Footer-Father .Container-One .Box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-Father .Container-One .Box figure img{
+    width: 250px;
+}
+.Footer-Father .Container-One .Box h2{
+    color: var(--colorsecundario);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.Footer-Father .Container-One .Box p{
+    color: var(--colorsecundario);
+    margin-bottom: 10px;
+}
+.Footer-Father .Container-One .Social-Contact a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: var(--colorsecundario);
+    text-align: center;
+    transition: all 300ms ease;
+    font-size: 2rem;
+    border-radius: 50px;
+}
+.Footer-Father .Container-Two {
+    background-color: var(--colorprimario);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--colorsecundario);
+}
+.Footer-Father .Container-Two small {
+    font-size: 15px;
+}
+
+.fa-facebook-square {
+    color: var(--colorprimario);
+}
+
+.fa-instagram {
+    color: var(--colorprimario);
+}
+
+.fa-twitter {
+    color: var(--colorprimario);
+}
+
+.fa-youtube {
+    color: var(--colorprimario);
+}
+
+/* ANIMACIONES DEL FOOTER */
+.fa-facebook-square:hover {
+    color: rgb(86, 86, 208);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+/* FOOTER RESPONSIVE */
+@media screen and (max-width:950px){
+    .Footer-Father .Container-One{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
